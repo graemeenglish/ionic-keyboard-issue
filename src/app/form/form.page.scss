@@ -1,0 +1,42 @@
+ion-footer {
+    background-color: #fff;
+  ion-toolbar {
+    --align-items: flex-end;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  ion-textarea {
+
+    grid-column: 1;
+    grid-row: 1;
+
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #3E424B;
+    min-height: 40px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    --max-height: 121px !important;
+    --border-radius: 10px !important;
+    --border-width: 1px !important;
+    --padding-start: 15px !important;
+    --padding-end: 15px !important;
+    --padding-top: 8px !important;
+    --padding-bottom: 5px !important;
+
+    --highlight-color-focused: #b3b3b3;
+    --highlight-color-valid: #b3b3b3;
+
+    &.invalid {
+      color: #e93423;
+    }
+  }
+
+}
